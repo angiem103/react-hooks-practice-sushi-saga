@@ -26,7 +26,7 @@ function App() {
 
     const remainingMoney = (money - piece.price)
 
-    if (remainingMoney >= 0){
+    if (piece.eaten && remainingMoney >= 0){
     setMoney(remainingMoney)
 
     setSushis(sushis.map((sushi => {
